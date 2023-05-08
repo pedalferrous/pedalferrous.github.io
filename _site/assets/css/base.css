@@ -1,0 +1,562 @@
+:root {
+    --main-bg: #000;
+    --main-text:  #00ff7a; /*#46ff00*/ /* #ff142a for some fun */
+    --main-text-dull: #008942;
+    --main-text-bright: #008942; /* pending */
+    --border: #00ff7a;
+    --border-hover: #000; /* pending */
+    --nav-bg: #002011;
+    --link: #000; /* pending */
+    --link-hover: #000; /* pending */
+    /* quote environment */
+    --quote-fg: #00ff7a; /* pending */
+    --quote-bg: #002011; /* pending */
+    --quote-border: #00ff7a; /* pending */
+    /* code environment */
+    --code-fg: var(--main-text);
+    --code-bg: var(--main-bg);
+    --code-border: var(--border);
+    /* external links */
+    --external-link-bg: #020; /* pending */
+    --external-link-color: #0C8; /* pending */
+    --external-link-hover-bg: #020; /* pending */
+    --external-link-hover-color: #0FB; /* pending */
+    /* sidenotes */
+    --sidenote-bright: #008942;
+    --sidenote-hover: #00ff7a; /* pending */
+    /* glow effects */
+    --init-img-opacity: 1.0;
+    --fin-img-opacity: 0.7;
+    --init-title-opacity: 1.0;
+    --fin-title-opacity: 0.6;
+    --init-subtitle-opacity: 1.0;
+    --fin-subtitle-opacity: 0.6;
+    /* alt colors */
+    --alt-bg: #000000;
+    --alt-text:  #00ff7a; /*#46ff00*/ /* #ff142a for some fun */
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    font-size: 12pt;
+    font-family: 'Ubuntu Mono', sans-serif;
+
+    /* sidenote and fig counters */
+    counter-reset: sym-count img-sym-count;
+}
+
+img {
+    width:100%; 
+    margin-left:-1em;
+}
+
+a {
+    color: var(--main-text);
+}
+
+a:hover {
+    color: var(--main-text);
+}
+
+.emphasis {
+    color: var(--alt-text) !important;
+}
+
+.navlink {
+    text-decoration: none !important;
+}
+
+.bg-custom {
+    background-color: var(--nav-bg);
+}
+
+.internal-nav-link {
+    color: var(--main-text) !important;
+}
+
+.navbar {
+    border-bottom: 2px solid var(--border);
+}
+
+/* currently unused; for floating fixed menus */
+.full-center {
+    /* less than elegant */
+    bottom: 0px !important;
+    right: 0px !important;
+    top: 0px !important;
+    left: 0px !important;
+    /* allow for nav menu access */
+    z-index: -1;
+}
+
+.post-title {
+    color: var(--main-text);
+}
+
+.post-title a {
+    color: var(--main-text) !important;
+}
+
+.right-title {
+    margin-left: 30%;
+    width: 70%;
+    padding-left: 1rem;
+    display: block;
+}
+
+.sub-title {
+    margin-top: -0.5em !important;
+}
+
+/* title and summary for index post */
+.right-post {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    float: right; 
+    width: 70%; 
+    border-left: 2px solid var(--code-border); 
+    min-height: 4.5em;
+}
+
+.right-post-dull {
+    color: var(--main-text-dull);
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    float: right; 
+    width: 70%; 
+    border-left: 2px solid var(--code-border); 
+    min-height: 1em;
+}
+
+/* metadata for index post */
+.left-post {
+    color: var(--main-text-dull);
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    text-align: right;
+    float: left; 
+    width: 30%;
+}
+
+.code-box:hover .post-title {
+    color: var(--main-text) !important;
+}
+
+/* style title link on landing page */
+.code-box:hover .post-title a {
+    color: var(--main-text) !important;
+    text-decoration: none;
+}
+
+/* style link around excerpt on landing page */
+.excerpt-link {
+    color: var(--main-text-dull) !important;
+}
+
+.excerpt-link:hover {
+    text-decoration: none;
+}
+
+/* color excerpt on hover */
+.code-box:hover .excerpt-link {
+    color: var(--main-text) !important;
+}
+
+.code-box:hover .left-post {
+    color: var(--main-text) !important;
+}
+
+/* index post on narrow devices */
+.post-mobile {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    border-left: 2px solid var(--code-border); 
+}
+
+.post-mobile-dull {
+    color: var(--main-text-dull);
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    border-left: 2px solid var(--code-border); 
+}
+
+/* general post para */
+.right-para {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 1em; 
+    margin-left: 30%;
+    width: 70%; 
+    border-left: 2px solid var(--code-border);
+}
+
+.post-content p {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 1em; 
+    margin-left: 30%;
+    width: 70%; 
+    border-left: 2px solid var(--code-border);
+}
+
+/* highlight fig caption on img hover */
+.right-para:hover .note-img {
+    color: var(--main-text);
+}
+
+/* highlight fig label on img hover */
+.right-para:hover .note-img:before {
+    color: var(--main-text);
+}
+
+/* intro nav para in post */
+.nav-para {
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 0em;
+    margin-left: 30%;
+    width: 70%; 
+    border-left: 2px solid var(--code-border);
+}
+
+/* remove styling for navivation */
+.nav-para a {
+    text-decoration: none;
+}
+
+/* sidenotes on large screens */
+.note-para {
+    color: var(--main-text-dull);
+    position: relative;
+
+    float: left;
+    clear: left;
+    margin-left: -16em;
+    text-align: right;
+    width: 14em;
+    margin-bottom: 1.5em;
+}
+
+/* highlight sidenote on hover */
+.note-para:hover {
+    color: var(--main-text);
+}
+
+/* general img in post */
+.note-img {
+    color: var(--main-text-dull);
+    position: relative;
+
+    float: left;
+    clear: left;
+    margin-left: -16em;
+    text-align: right;
+    width: 14em;
+    margin-bottom: 1.5em;
+}
+
+/* highlight fig label on hover */
+.note-img:hover {
+    color: var(--main-text);
+}
+
+/* fig label number */
+.note-img::before {
+    color: var(--main-text-dull);
+    content: "[fig "counter(img-sym-count)"] ";
+}
+
+/* in-text sidenote label */
+.note-sym::before {
+    color: var(--main-text-dull);
+    content: "["counter(sym-count)"]";
+}
+
+/* sidenote label */
+.note-para::before {
+    color: var(--main-text-dull);
+    content: "["counter(sym-count)"] ";
+    position: relative;
+    vertical-align: baseline;
+}
+
+/* highlight in-text sidenote label on sidenote hover */
+.note-sym:hover:after {
+    color: var(--main-text);
+}
+
+/* highlight sidenote text on in-text hover */
+.note-sym:hover .note-para {
+    color: var(--main-text);
+}
+
+/* highlight sidenote label on in-text hover */
+.note-sym:hover .note-para:before {
+    color: var(--main-text);
+}
+
+/* increment sidenote counter */
+.note-sym {
+    counter-increment: sym-count;
+}
+
+/* increment fig counter */
+.note-img-sym {
+    counter-increment: img-sym-count;
+}
+
+.code-box {
+    color: var(--code-fg) !important;
+    font-family: 'Ubuntu Mono', monospace;
+    overflow: auto;
+    word-wrap: break-word;
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    margin-top: 0px; 
+    margin-bottom: 0px;
+}
+
+.code-box p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.code-box a {
+    color: var(--main-text-dull);
+}
+
+.code-box a:hover {
+    color: var(--main-text);
+}
+
+/* CURRENTLY NON-UPDATED; BUT WILL BE USED */
+
+.quote {
+    color: var(--quote-fg) !important;
+    background-color: var(--quote-bg) !important;
+    border-left: 2px solid var(--quote-border) !important;
+    border-right: 2px solid var(--quote-border) !important;
+    padding-bottom: 0.5em !important;
+    padding-top: 0.5em !important;
+}
+
+.external-link {
+    color: var(--external-link-color);
+    background-color: var(--external-link-bg);
+}
+
+.external-link:hover {
+    color: var(--external-link-hover-color);
+    background-color: var(--external-link-hover-bg);
+}
+
+.glow-subtitle {
+    -webkit-animation: glow-subtitle 5s ease-in-out infinite alternate;
+    -moz-animation: glow-subtitle 5s ease-in-out infinite alternate;
+    animation: glow-subtitle 5s ease-in-out infinite alternate;
+    animation-delay: -5s;
+}
+
+@-webkit-keyframes glow-subtitle {
+    from {
+        opacity: var(--init-subtitle-opacity);
+    }
+    to {
+        opacity: var(--fin-subtitle-opacity);
+    }
+}
+
+.glow-title {
+    -webkit-animation: glow-title 5s ease-in-out infinite alternate;
+    -moz-animation: glow-title 5s ease-in-out infinite alternate;
+    animation: glow-title 5s ease-in-out infinite alternate;
+    animation-delay: 0s;
+}
+
+@-webkit-keyframes glow-title {
+    from {
+        opacity: var(--init-title-opacity);
+    }
+    to {
+        opacity: var(--fin-title-opacity);
+    }
+}
+
+.glow-image {
+    -webkit-animation: glow-image 2s ease-in-out infinite alternate;
+    -moz-animation: glow-image 2s ease-in-out infinite alternate;
+    animation: glow-image 2s ease-in-out infinite alternate;
+    animation-delay: 0s;
+}
+
+@-webkit-keyframes glow-image {
+    from {
+        opacity: var(--init-img-opacity);
+    }
+    to {
+     opacity: var(--fin-img-opacity);
+    }
+}
+
+/* bootstrap specified breakpoints */
+/* x-large devices and smaller (less than 1200px) 1199.98 */
+@media (max-width: 1199.98px) {
+    .note-para {
+        position: relative;
+
+        float: left;
+        clear: left;
+        margin-left: -12em;
+        text-align: right;
+        width: 10em;
+        margin-bottom: 1.5em;
+    }
+
+    .note-img {
+        position: relative;
+
+        float: left;
+        clear: left;
+        margin-left: -12em;
+        text-align: right;
+        width: 10em;
+        margin-bottom: 1.5em;
+    }
+}
+
+/* bootstrap specified breakpoints */
+/* large devices and smaller (less than 992px) 991.98 */
+@media (max-width: 991.98px) {
+
+}
+
+/* bootstrap specified breakpoints */
+/* medium devices and smaller (less than 768px) 767.98 */
+@media (max-width: 767.98px) {
+
+    .note-para {
+        color: var(--sidenote-bright);
+        float: none;
+        /*display: block;  remove for inline */
+        /*clear: none;*/ /* unclear what this does */
+        margin-left: 0em;
+        text-align: left;
+        width: 100%;
+        margin-top: 1em; /* spacing before and after */
+        margin-bottom: 1em;
+    }
+
+    /* BEGIN SIDENOTE COLORING */
+
+    /* remove in-text sidenote label */
+    .note-sym::before {
+        color: var(--sidenote-bright);
+        content: "";
+    }
+
+
+    /* highlight sidenote on hover */
+    .note-para:hover {
+        color: var(--sidenote-hover);
+    }
+
+    /* general img in post */
+    .note-img {
+        color: var(--sidenote-bright);
+    }
+
+    /* highlight fig label on hover */
+    .note-img:hover {
+        color: var(--sidenote-hover);
+    }
+
+    /* fig label number */
+    .note-img::before {
+        color: var(--sidenote-bright);
+    }
+
+    /* sidenote label */
+    .note-para::before {
+        color: var(--sidenote-bright);
+    }
+
+    /* highlight in-text sidenote label on sidenote hover */
+    .note-sym:hover:after {
+        color: var(--sidenote-hover);
+    }
+
+    /* highlight sidenote text on in-text hover */
+    .note-sym:hover .note-para {
+        color: var(--sidenote-hover);
+    }
+
+    /* highlight sidenote label on in-text hover */
+    .note-sym:hover .note-para:before {
+        color: var(--sidenote-hover);
+    }
+
+    /* highlight fig caption on img hover */
+    .right-para:hover .note-img {
+        color: var(--sidenote-hover);
+    }
+
+    /* highlight fig label on img hover */
+    .right-para:hover .note-img:before {
+        color: var(--sidenote-hover);
+    }
+
+    /* END SIDENOTE COLORING */
+
+    /* widen general post para */
+    .right-para {
+        margin-left: 0em;
+        width: 100%; 
+    }
+
+    .post-content p {
+        margin-left: 0em;
+        width: 100%; 
+    }
+
+    /* widen nav para */
+    .nav-para {
+        margin-left: 0em;
+        width: 100%; 
+    }
+
+    .note-img {
+        color: var(--sidenote-bright);
+        float: none;
+        /*display: block;  remove for inline */
+        /*clear: none;*/ /* unclear what this does */
+        margin-left: 0em;
+        text-align: left;
+        width: 100%;
+        margin-top: 1em; /* spacing before and after */
+        margin-bottom: 1em;
+    }
+
+    img {
+        padding-top: 0.5em;
+    }
+
+    /* bootstrap removes padding on small devices */
+    .code-box p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}

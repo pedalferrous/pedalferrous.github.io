@@ -1,0 +1,8 @@
+{% assign output = content
+  | replace: '<del>', '<span class="note-sym"><span class="note-para">'
+  | replace: '</del>', '</span></span>'
+  | replace: '-fig', '<span class="note-img-sym"><span class="note-img">'
+  | replace: 'fig-', '</span></span>'
+%}
+
+{{output}}

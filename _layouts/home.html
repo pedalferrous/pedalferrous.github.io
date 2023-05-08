@@ -1,0 +1,334 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <div class="d-block d-md-none pb-5">
+      <nav class="p-0 navbar fixed-top bg-custom navbar-dark navbar-expand-lg navigation">
+          <a class="py-2 px-3 text-decoration-none w-100 ml-auto" data-toggle="collapse" href="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              >>>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="d-flex">
+                  <ul class="navbar-nav list-inline mx-auto justify-content-center">
+                      <li class="pb-1 nav-item glow-image">
+                          <a class="text-decoration-none" href="{{ site.url }}">
+                              > home
+                          </a>
+                      </li>
+                      <li class="py-1 pb-4 nav-item glow-image">
+                          <a class="text-decoration-none" href="https://en.wikipedia.org/wiki/Special:Random">
+                              > somewhere else
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </div>
+
+  <div class="row justify-content-center py-5 px-4">
+      <div class="col col-lg-10 col-md-12 col-sm-12 col-12">
+          
+          <!-- title and subtitle -->
+          <div class="row justify-content-center no-gutters">
+              <div class="col col-12">
+                  <!-- Display for mobile -->
+                  <div class="d-md-none">
+                      <h4 class="glow-title">
+                          <div class="d-md-none"></div>
+                          <a class="text-decoration-none" href="{{ site.url }}">
+                              {{ page.main-title }}
+                          </a>
+                      </h4>
+                      <div>
+                          <p class="glow-subtitle">
+                              {{ page.sub-title | escape }}
+                          </p>
+                      </div>
+                  </div>
+                  <!-- Display on larger devices -->
+                  <div class="d-none d-md-block">
+                      <h4 class="glow-title">
+                          <a class="text-decoration-none right-title" href="{{ site.url }}">
+                              {{ page.main-title }}
+                          </a>
+                      </h4>
+                      <div>
+                          <p class="glow-subtitle right-title sub-title">
+                              {{ page.sub-title | escape }}
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- overview and summary -->
+          <div class="row no-gutters">
+              <div class="col col-12 pt-3">
+                  <div class="code-box">
+                      <!-- Display for mobile -->
+                      <div class="d-md-none">
+                          <p class="post-mobile-dull">
+                              I study the theory of quantum algorithms at MIT, advised by <a href="https://scholar.google.com/citations?user=QKyb_9oAAAAJ&hl=en" class="emphasis">Ike&nbsp;Chuang&nbsp;↗</a>. My work draws on techniques from <span class="emphasis">representation theory</span>, <span class="emphasis">functional analysis</span>, and <span class="emphasis">algebraic geometry</span> to construct intuitive quantum algorithms for common problems in linear algebra.
+                              <br><br>
+                              Quantum computing lacks diverse algorithmic techniques, and those that exist are fragile & specific. My takeaway from this is the virtue of <span class="emphasis">translating</span> sophisticated techniques from well-established mathematical subfields to the lexicon of quantum computation.
+                              <br><br>
+                              Not only does this pad-out the quantum algorithmist's toolkit but, if exposited clearly, can also recruit the interest and collaboration of previously disparate mathematical and TCS communities.
+                          </p>
+                      </div>
+                      <!-- Display on larger devices -->
+                      <div class="d-none d-md-block">
+                          <p class="left-post">
+                              About me
+                          </p>
+                          <p class="right-post-dull">
+                              I study the theory of quantum algorithms at MIT, advised by <a href="https://scholar.google.com/citations?user=QKyb_9oAAAAJ&hl=en" class="emphasis">Ike&nbsp;Chuang&nbsp;↗</a>. My work draws on techniques from <span class="emphasis">algebraic geometry</span>, <span class="emphasis">functional analysis</span>, and <span class="emphasis">category theory</span> to construct intuitive quantum algorithms for common problems in linear algebra.
+                              <br><br>
+                              Quantum computing lacks diverse algorithmic techniques, and those that exist are fragile & specific. My takeaway from this is the virtue of <span class="emphasis">translating</span> sophisticated techniques from well-established mathematical subfields to the lexicon of quantum computation.
+                              <br><br>
+                              Not only does this pad-out the quantum algorithmist's toolkit but, if exposited clearly, it can also recruit the interest and collaboration of previously disparate mathematical and TCS communities.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- listing questions in the above intro, as bullets -->
+
+          <!-- interests, directions, contact -->
+          <div class="row no-gutters">
+              <div class="col col-12 pt-3">
+                  <div class="code-box">
+                      <!-- Display for mobile -->
+                      <div class="d-md-none">
+                          <p class="post-mobile-dull">
+                              I can be reached at <span class="emphasis">zmr</span> followed by <span class="emphasis">@mit.edu</span>.
+                          </p>
+                      </div>
+                      <!-- Display on larger devices -->
+                      <div class="d-none d-md-block">
+                          <p class="left-post">
+                              Contact
+                          </p>
+                          <p class="right-post-dull">
+                              I can be reached at <span class="emphasis">zmr</span> followed by <span class="emphasis">@mit.edu</span>. For recent publications, check out my <a href="https://scholar.google.com/citations?user=W8_-cSoAAAAJ&hl=en" class="emphasis">google scholar page</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- covering only the highlighted papers -->
+          {% for tag in site.tags %}
+            {% if tag[0] == "highlight" %}
+                {%- if tag[1].size > 0 -%}
+                  <!-- select pubs -->
+                  <div class="row no-gutters">
+                      <div class="col col-12 pt-5">
+                          <!-- Display for mobile -->
+                          <div class="d-md-none">
+                              <div>
+                                  <h4 class="glow-subtitle">
+                                      highlighted publications
+                                  </h4>
+                              </div>
+                          </div>
+                          <!-- Display on larger devices -->
+                          <div class="d-none d-md-block">
+                              <div>
+                                  <h4 class="glow-subtitle right-title">
+                                      highlighted publications
+                                  </h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row no-gutters">
+                    {% for post in tag[1] %}
+                    {%- assign date_format = "%b, %Y" -%}
+                    {%- assign w = post.date | date: "%w" -%}
+                    <div class="col col-12 pt-3">
+                          <div class="code-box">
+                              <!-- Display for mobile -->
+                              <div class="d-md-none">
+                                  <p class="post-mobile">
+                                      <span class="post-title">
+                                          <a href="{{ post.pdflink }}">
+                                              §{{ post.ordinal | escape }}. {{ post.title | escape }} >>
+                                          </a>
+                                      </span><br>
+                                      <a class="excerpt-link" href="{{ post.pdflink }}">
+                                          {{ post.preview }}
+                                      </a><br>
+                                      {{ post.content | remove: '<p>' | remove: '</p>' }}
+                                  </p>
+                              </div>
+                              <!-- Display on larger devices -->
+                              <div class="d-none d-md-block">
+                                  <p class="left-post">
+                                      {{ post.location | escape }}<br>
+                                      {{ post.date | date: date_format }}
+                                  </p>
+                                  <p class="right-post">
+                                      <span class="post-title">
+                                          <a href="{{ post.pdflink }}">
+                                              §{{ post.ordinal | escape }}. {{ post.title | escape }} >>
+                                          </a>
+                                      </span><br>
+                                      <a class="excerpt-link" href="{{ post.pdflink }}">
+                                          {{ post.preview }}
+                                      </a><br>
+                                      {{ post.content | remove: '<p>' | remove: '</p>' }}
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      {% endfor %}
+                  </div>
+                {% endif %}
+            {% endif %}
+          {% endfor %}
+
+          <!-- misc notes -->
+          <div class="row no-gutters">
+              <div class="col col-12 pt-5">
+                  <!-- Display for mobile -->
+                  <div class="d-md-none">
+                      <div>
+                          <h4 class="glow-subtitle">
+                              notes and errata
+                          </h4>
+                      </div>
+                  </div>
+                  <!-- Display on larger devices -->
+                  <div class="d-none d-md-block">
+                      <div>
+                          <h4 class="glow-subtitle right-title">
+                              notes and errata
+                          </h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- overview and summary -->
+          <div class="row no-gutters">
+              <div class="col col-12 pt-3">
+                  <div class="code-box">
+                      <!-- Display for mobile -->
+                      <div class="d-md-none">
+                          <p class="post-mobile-dull">
+                              I was lucky to be able to intern at NTT Research Inc. in California, as well as visit and work at NTT BRL in Atsugi, Japan for a semester in 2022. 今から日本での研究グループの関係を作るのが続けたいので、僕の研究に興味が持てば気軽にメールして下さい。日本語でも大丈夫です。
+                          </p>
+                      </div>
+                      <!-- Display on larger devices -->
+                      <div class="d-none d-md-block">
+                          <p class="left-post">
+                              More about me
+                          </p>
+                          <p class="right-post-dull">
+                              I was lucky to be able to intern at NTT Research Inc. in California, as well as visit and work at NTT BRL in Atsugi, Japan for a semester in 2022. 今から日本での研究グループの関係を作るのが続けたいので、僕の研究に興味が持てば気軽にメールして下さい。日本語でも大丈夫です。
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- all pubs -->
+          <div class="row no-gutters">
+              <div class="col col-12 pt-5">
+                  <!-- Display for mobile -->
+                  <div class="d-md-none">
+                      <div>
+                          <h4 class="glow-subtitle">
+                              all publications
+                          </h4>
+                      </div>
+                  </div>
+                  <!-- Display on larger devices -->
+                  <div class="d-none d-md-block">
+                      <div>
+                          <h4 class="glow-subtitle right-title">
+                              all publications
+                          </h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          {% assign posts = site.posts %}
+
+          <!-- main messages -->
+          <div class="row no-gutters">
+              <!-- Beginning of posts -->
+              {%- if posts.size > 0 -%}
+                  {%- for post in posts -%}
+                      {%- assign date_format = "%b, %Y" -%}
+                      {%- assign w = post.date | date: "%w" -%}
+                      <div class="col col-12 pt-3">
+                          <div class="code-box">
+                              <!-- Display for mobile -->
+                              <div class="d-md-none">
+                                  <p class="post-mobile">
+                                      <span class="post-title">
+                                          <a href="{{ post.pdflink }}">
+                                              §{{ post.ordinal | escape }}. {{ post.title | escape }} >>
+                                          </a>
+                                      </span><br>
+                                      <a class="excerpt-link" href="{{ post.pdflink }}">
+                                          {{ post.preview }}
+                                      </a><br>
+                                      {{ post.content | remove: '<p>' | remove: '</p>' }}
+                                  </p>
+                              </div>
+                              <!-- Display on larger devices -->
+                              <div class="d-none d-md-block">
+                                  <p class="left-post">
+                                      {{ post.location | escape }}<br>
+                                      {{ post.date | date: date_format }}
+                                  </p>
+                                  <p class="right-post">
+                                      <span class="post-title">
+                                          <a href="{{ post.pdflink }}">
+                                              §{{ post.ordinal | escape }}. {{ post.title | escape }} >>
+                                          </a>
+                                      </span><br>
+                                      <a class="excerpt-link" href="{{ post.pdflink }}">
+                                          {{ post.preview }}
+                                      </a><br>
+                                      {{ post.content | remove: '<p>' | remove: '</p>' }}
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  {%- endfor -%}
+              {%- endif -%}
+              <!-- End of posts. -->
+              <div class="col col-12 pt-3">
+                  <div class="code-box">
+                      <!-- Display for mobile -->
+                      <div class="d-md-none">
+                          <p class="post-mobile-dull">
+                              {{ page.end-content }}
+                          </p>
+                      </div>
+                      <!-- Display on larger devices -->
+                      <div class="d-none d-md-block">
+                          <p class="left-post">
+                              
+                          </p>
+                          <p class="right-post-dull">
+                              {{ page.end-content }}
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,185 @@
+---
+layout: default
+---
+
+<div class="d-block d-md-none pb-5">
+    <nav class="p-0 navbar fixed-top bg-custom navbar-dark navbar-expand-lg navigation">
+        <a class="py-2 px-3 text-decoration-none w-100 ml-auto" data-toggle="collapse" href="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            >>>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex">
+                <ul class="navbar-nav list-inline mx-auto justify-content-center">
+                    <li class="pb-1 nav-item glow-image">
+                        <a class="text-decoration-none" href="{{ site.url }}">
+                            > home
+                        </a>
+                    </li>
+                    <li class="py-1 pb-4 nav-item glow-image">
+                        <a class="text-decoration-none" href="https://en.wikipedia.org/wiki/Special:Random">
+                            > somewhere else
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="row justify-content-center py-5 px-4">
+    <div class="col col-lg-10 col-md-12 col-sm-12 col-12">
+        <div class="row justify-content-center no-gutters">
+            <div class="col col-12">
+                <!-- Display for mobile -->
+                <div class="d-md-none">
+                    <h2 class="glow-title">
+                        <div class="d-md-none"></div>
+                        <a class="text-decoration-none" href="{{ page.url }}">
+                            {{ page.title | escape }}
+                        </a>
+                    </h2>
+                    <div>
+                        <p class="glow-subtitle">
+                            {{ page.sub-title | escape }}
+                        </p>
+                    </div>
+                </div>
+                <!-- Display on larger devices -->
+                <div class="d-none d-md-block">
+                    <h2 class="glow-title">
+                        <a class="text-decoration-none right-title" href="{{ page.url }}">
+                            {{ page.title | escape }}
+                        </a>
+                    </h2>
+                    <div>
+                        <p class="glow-subtitle right-title sub-title">
+                            {{ page.sub-title | escape }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main message -->
+        <div class="row no-gutters">
+            <!-- Beginning of post -->
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="nav-para">
+                                {% if page.next %} 
+                                    <span class="next-link">
+                                        <a rel="next" href="{{ page.next.url }}">> next</a>
+                                    </span>
+                                {% else %}
+                                    <span class="next-link">
+                                        <a rel="next" href="{{ site.url }}">> next</a>
+                                    </span>
+                                {% endif %}
+                                {% if page.previous %} 
+                                    <span class="previous-link">
+                                        <a rel="prev" href="{{ page.previous.url }}">> previous</a>
+                                    </span>
+                                {% else %}
+                                    <span class="previous-link">
+                                        <a rel="prev" href="{{ site.url }}">> previous</a>
+                                    </span>
+                                {% endif %}
+                                <a href="{{ site.url }}">> home</a><br>
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="nav-para">
+                                {% if page.next %} 
+                                    <span class="next-link">
+                                        <a rel="next" href="{{ page.next.url }}">> next</a>
+                                    </span>
+                                {% else %}
+                                    <span class="next-link">
+                                        <a rel="next" href="{{ site.url }}">> next</a>
+                                    </span>
+                                {% endif %}
+                                {% if page.previous %} 
+                                    <span class="previous-link">
+                                        <a rel="prev" href="{{ page.previous.url }}">> previous</a>
+                                    </span>
+                                {% else %}
+                                    <span class="previous-link">
+                                        <a rel="prev" href="{{ site.url }}">> previous</a>
+                                    </span>
+                                {% endif %}
+                                <a href="{{ site.url }}">> home</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <div class="post-content">
+                            <div class="d-block">
+
+                                <p>
+                                    {{ page.date | date: "Posted on %A, %m/%d/%y." }}
+                                </p>
+
+                                {{ content }}
+
+                                <!-- Display on smaller devices -->
+                                <div class="d-md-none">
+                                    <p class="nav-para">
+                                        {% if page.next %} 
+                                            <span class="next-link">
+                                                <a rel="next" href="{{ page.next.url }}">> next</a>
+                                            </span>
+                                        {% else %}
+                                            <span class="next-link">
+                                                <a rel="next" href="{{ site.url }}">> next</a>
+                                            </span>
+                                        {% endif %}
+                                        {% if page.previous %} 
+                                            <span class="previous-link">
+                                                <a rel="prev" href="{{ page.previous.url }}">> previous</a>
+                                            </span>
+                                        {% else %}
+                                            <span class="previous-link">
+                                                <a rel="prev" href="{{ site.url }}">> previous</a>
+                                            </span>
+                                        {% endif %}
+                                        <a href="{{ site.url }}">> home</a><br>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="nav-para">
+                                      {% if page.next %} 
+                                          <span class="next-link">
+                                              <a rel="next" href="{{ page.next.url }}">> next</a>
+                                          </span>
+                                      {% else %}
+                                          <span class="next-link">
+                                              <a rel="next" href="{{ site.url }}">> next</a>
+                                          </span>
+                                      {% endif %}
+                                      {% if page.previous %} 
+                                          <span class="previous-link">
+                                              <a rel="prev" href="{{ page.previous.url }}">> previous</a>
+                                          </span>
+                                      {% else %}
+                                          <span class="previous-link">
+                                              <a rel="prev" href="{{ site.url }}">> previous</a>
+                                          </span>
+                                      {% endif %}
+                                      <a href="{{ site.url }}">> home</a><br>
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- End of post -->
+        </div>
+    </div>
+</div>
