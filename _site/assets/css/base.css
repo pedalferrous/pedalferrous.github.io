@@ -51,6 +51,11 @@ img {
     margin-left:-1em;
 }
 
+.title-img {
+    width: 280px !important;
+    padding-left: 4em !important;
+}
+
 a {
     color: var(--main-text);
 }
