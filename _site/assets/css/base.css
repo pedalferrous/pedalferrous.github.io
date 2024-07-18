@@ -8,6 +8,8 @@
     --nav-bg: #002011;
     --link: #000; /* pending */
     --link-hover: #000; /* pending */
+    --main-alert: #ff1144;
+    --main-alert-dull: #38000c;
     /* quote environment */
     --quote-fg: #00ff7a; /* pending */
     --quote-bg: #002011; /* pending */
@@ -138,9 +140,34 @@ a:hover {
     min-height: 1em;
 }
 
+.right-post-alert {
+    color: var(--main-alert);
+    background-color: var(--main-alert-dull);
+    padding-top: 0px; 
+    padding-bottom: 0px;
+/*    margin-right: 20%;*/
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    float: right; 
+    width: 70%; 
+    border-left: 2px solid var(--main-alert); 
+    min-height: 1em;
+}
+
 /* metadata for index post */
 .left-post {
     color: var(--main-text-dull);
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    text-align: right;
+    float: left; 
+    width: 30%;
+}
+
+.left-post-alert {
+    color: var(--main-alert);
     padding-top: 0px; 
     padding-bottom: 0px;
     margin-top: 0px; 
@@ -194,6 +221,16 @@ a:hover {
     margin-top: 0px; 
     margin-bottom: 0px; 
     border-left: 2px solid var(--code-border); 
+}
+
+.post-mobile-alert {
+    color: var(--main-alert);
+    background-color: var(--main-alert-dull);
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    border-left: 2px solid var(--main-alert); 
 }
 
 /* general post para */
