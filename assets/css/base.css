@@ -1,6 +1,6 @@
 :root {
     --main-bg: #000;
-    --main-text:  #00ff7a; /*#46ff00*/ /* #ff142a for some fun */
+    --main-text: #00ff7a; /*#46ff00*/ /* #ff142a for some fun */
     --main-text-dull: #008942;
     --main-text-bright: #008942; /* pending */
     --border: #00ff7a;
@@ -8,8 +8,12 @@
     --nav-bg: #002011;
     --link: #000; /* pending */
     --link-hover: #000; /* pending */
+    /* alert colors */
     --main-alert: #ff1144;
     --main-alert-dull: #38000c;
+    /* tip colors */
+    --main-tip: #ffbb11;
+    --main-tip-dull: #382c00;
     /* quote environment */
     --quote-fg: #00ff7a; /* pending */
     --quote-bg: #002011; /* pending */
@@ -20,37 +24,37 @@
     --code-border: var(--border);
     /* external links */
     --external-link-bg: #020; /* pending */
-    --external-link-color: #0C8; /* pending */
+    --external-link-color: #0c8; /* pending */
     --external-link-hover-bg: #020; /* pending */
-    --external-link-hover-color: #0FB; /* pending */
+    --external-link-hover-color: #0fb; /* pending */
     /* sidenotes */
     --sidenote-bright: #008942;
     --sidenote-hover: #00ff7a; /* pending */
     /* glow effects */
-    --init-img-opacity: 1.0;
+    --init-img-opacity: 1;
     --fin-img-opacity: 0.7;
-    --init-title-opacity: 1.0;
+    --init-title-opacity: 1;
     --fin-title-opacity: 0.6;
-    --init-subtitle-opacity: 1.0;
+    --init-subtitle-opacity: 1;
     --fin-subtitle-opacity: 0.6;
     /* alt colors */
     --alt-bg: #000000;
-    --alt-text:  #00ff7a; /*#46ff00*/ /* #ff142a for some fun */
+    --alt-text: #00ff7a; /*#46ff00*/ /* #ff142a for some fun */
 }
 
 body {
     background-color: var(--main-bg);
     color: var(--main-text);
     font-size: 12pt;
-    font-family: 'Ubuntu Mono', sans-serif;
+    font-family: "Ubuntu Mono", sans-serif;
 
     /* sidenote and fig counters */
     counter-reset: sym-count img-sym-count;
 }
 
 img {
-    width:100%; 
-    margin-left:-1em;
+    width: 100%;
+    margin-left: -1em;
 }
 
 .title-img {
@@ -118,62 +122,87 @@ a:hover {
 
 /* title and summary for index post */
 .right-post {
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
-    margin-bottom: 0px; 
-    float: right; 
-    width: 70%; 
-    border-left: 2px solid var(--code-border); 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: right;
+    width: 70%;
+    border-left: 2px solid var(--code-border);
     min-height: 4.5em;
 }
 
 .right-post-dull {
     color: var(--main-text-dull);
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
-    margin-bottom: 0px; 
-    float: right; 
-    width: 70%; 
-    border-left: 2px solid var(--code-border); 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: right;
+    width: 70%;
+    border-left: 2px solid var(--code-border);
     min-height: 1em;
 }
 
 .right-post-alert {
     color: var(--main-alert);
     background-color: var(--main-alert-dull);
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-/*    margin-right: 20%;*/
-    margin-top: 0px; 
-    margin-bottom: 0px; 
-    float: right; 
-    width: 70%; 
-    border-left: 2px solid var(--main-alert); 
+    /*    margin-right: 20%;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: right;
+    width: 70%;
+    border-left: 2px solid var(--main-alert);
+    min-height: 1em;
+}
+
+.right-post-tip {
+    color: var(--main-tip);
+    background-color: var(--main-tip-dull);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /*    margin-right: 20%;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: right;
+    width: 70%;
+    border-left: 2px solid var(--main-tip);
     min-height: 1em;
 }
 
 /* metadata for index post */
 .left-post {
     color: var(--main-text-dull);
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
-    margin-bottom: 0px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: right;
-    float: left; 
+    float: left;
     width: 30%;
 }
 
 .left-post-alert {
     color: var(--main-alert);
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
-    margin-bottom: 0px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: right;
-    float: left; 
+    float: left;
+    width: 30%;
+}
+
+.left-post-tip {
+    color: var(--main-tip);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+    float: left;
     width: 30%;
 }
 
@@ -207,50 +236,60 @@ a:hover {
 
 /* index post on narrow devices */
 .post-mobile {
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
-    margin-bottom: 0px; 
-    border-left: 2px solid var(--code-border); 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left: 2px solid var(--code-border);
 }
 
 .post-mobile-dull {
     color: var(--main-text-dull);
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
-    margin-bottom: 0px; 
-    border-left: 2px solid var(--code-border); 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left: 2px solid var(--code-border);
 }
 
 .post-mobile-alert {
     color: var(--main-alert);
     background-color: var(--main-alert-dull);
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
-    margin-bottom: 0px; 
-    border-left: 2px solid var(--main-alert); 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left: 2px solid var(--main-alert);
+}
+
+.post-mobile-tip {
+    color: var(--main-tip);
+    background-color: var(--main-tip-dull);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-left: 2px solid var(--main-tip);
 }
 
 /* general post para */
 .right-para {
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
-    margin-bottom: 1em; 
+    margin-top: 0px;
+    margin-bottom: 1em;
     margin-left: 30%;
-    width: 70%; 
+    width: 70%;
     border-left: 2px solid var(--code-border);
 }
 
 .post-content p {
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
-    margin-bottom: 1em; 
+    margin-top: 0px;
+    margin-bottom: 1em;
     margin-left: 30%;
-    width: 70%; 
+    width: 70%;
     border-left: 2px solid var(--code-border);
 }
 
@@ -266,12 +305,12 @@ a:hover {
 
 /* intro nav para in post */
 .nav-para {
-    padding-top: 0px; 
+    padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 0px; 
+    margin-top: 0px;
     margin-bottom: 0em;
     margin-left: 30%;
-    width: 70%; 
+    width: 70%;
     border-left: 2px solid var(--code-border);
 }
 
@@ -319,19 +358,19 @@ a:hover {
 /* fig label number */
 .note-img::before {
     color: var(--main-text-dull);
-    content: "[fig "counter(img-sym-count)"] ";
+    content: "[fig " counter(img-sym-count) "] ";
 }
 
 /* in-text sidenote label */
 .note-sym::before {
     color: var(--main-text-dull);
-    content: "["counter(sym-count)"]";
+    content: "[" counter(sym-count) "]";
 }
 
 /* sidenote label */
 .note-para::before {
     color: var(--main-text-dull);
-    content: "["counter(sym-count)"] ";
+    content: "[" counter(sym-count) "] ";
     position: relative;
     vertical-align: baseline;
 }
@@ -363,12 +402,12 @@ a:hover {
 
 .code-box {
     color: var(--code-fg) !important;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: "Ubuntu Mono", monospace;
     overflow: auto;
     word-wrap: break-word;
-    padding-top: 0px; 
-    padding-bottom: 0px; 
-    margin-top: 0px; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -450,7 +489,7 @@ a:hover {
         opacity: var(--init-img-opacity);
     }
     to {
-     opacity: var(--fin-img-opacity);
+        opacity: var(--fin-img-opacity);
     }
 }
 
@@ -483,13 +522,11 @@ a:hover {
 /* bootstrap specified breakpoints */
 /* large devices and smaller (less than 992px) 991.98 */
 @media (max-width: 991.98px) {
-
 }
 
 /* bootstrap specified breakpoints */
 /* medium devices and smaller (less than 768px) 767.98 */
 @media (max-width: 767.98px) {
-
     .note-para {
         color: var(--sidenote-bright);
         float: none;
@@ -509,7 +546,6 @@ a:hover {
         color: var(--sidenote-bright);
         content: "";
     }
-
 
     /* highlight sidenote on hover */
     .note-para:hover {
@@ -566,18 +602,18 @@ a:hover {
     /* widen general post para */
     .right-para {
         margin-left: 0em;
-        width: 100%; 
+        width: 100%;
     }
 
     .post-content p {
         margin-left: 0em;
-        width: 100%; 
+        width: 100%;
     }
 
     /* widen nav para */
     .nav-para {
         margin-left: 0em;
-        width: 100%; 
+        width: 100%;
     }
 
     .note-img {
