@@ -10,4 +10,4 @@ pdflink: "https://arxiv.org/abs/2105.02859"
 preview: "J M. Martyn, Z M. Rossi, A K. Tan, I L. Chuang"
 tag: highlight
 ---
-[\[PDF\]](https://arxiv.org/abs/2105.02859)
+[\[PDF\]](https://arxiv.org/pdf/2105.02859)

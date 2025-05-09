@@ -9,4 +9,4 @@ ordinal: 0
 pdflink: "https://arxiv.org/abs/1902.01474"
 preview: "Y Shi, N Leung, P Gokhale, Z M. Rossi, D I. Schuster, H Hoffmann, F T. Chong"
 ---
-[\[PDF\]](https://arxiv.org/abs/1902.01474)
+[\[PDF\]](https://arxiv.org/pdf/1902.01474)

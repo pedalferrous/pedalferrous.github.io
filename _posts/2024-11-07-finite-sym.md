@@ -10,4 +10,4 @@ pdflink: "https://arxiv.org/abs/2411.05058"
 preview: "Victor M. Bastidas, Nathan Fitzpatrick, K. J. Joven, Zane M. Rossi, Shariful Islam, Troy Van Voorhis, Isaac L. Chuang, Yuan Liu"
 tag:
 ---
-[\[PDF\]](https://arxiv.org/abs/2411.05058)
+[\[PDF\]](https://arxiv.org/pdf/2411.05058)

@@ -9,4 +9,4 @@ ordinal: 1
 pdflink: "https://arxiv.org/abs/2102.02194"
 preview: "Z M. Rossi, I L. Chuang"
 ---
-[\[PDF\]](https://arxiv.org/abs/2102.02194)
+[\[PDF\]](https://arxiv.org/pdf/2102.02194)
