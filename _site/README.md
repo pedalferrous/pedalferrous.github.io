@@ -1,3 +1,3 @@
 # luna: a lightweight professional site
 
-This site provides basic information and highlights recent published work.
+This site provides personal information, summarizes current research interests, and highlights recent published work.

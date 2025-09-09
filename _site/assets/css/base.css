@@ -103,8 +103,10 @@
     /*--link: #F00;
     --link-hover: #0F0;*/ /* Currently unused */
     /* alert colors */
-    --main-alert: #6e3000;
-    --main-alert-dull: #fff3d9;
+    /*--main-alert: #6e3000;
+    --main-alert-dull: #fff3d9;*/
+    --main-alert: #4b0005;
+    --main-alert-dull: #ffe8ed;
     /* tip colors */
     --main-tip: #14466b;
     --main-tip-dull:#d5e9f7;
@@ -133,10 +135,10 @@
     --fin-subtitle-opacity: 0.6;
     /* alt colors */
     --alt-bg: #e1ffeb;
-    --alt-text: #d4000f; /*ba002c*/
-    --alt-text-pdf: #d4000f; /*#29ab61;*/
-    --alt-text-abs: #4ab1ef;
-    --alt-text-pres: #d4000f;
+    --alt-text: #e80037; /*ba002c*/
+    --alt-text-pdf: #e80037; /*#29ab61;*/
+    --alt-text-abs: #2071ad;
+    --alt-text-pres: #e80037;
 }
 
 /*\definecolor{crimson}{RGB}{186,0,44}
