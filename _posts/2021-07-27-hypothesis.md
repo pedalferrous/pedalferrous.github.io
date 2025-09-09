@@ -6,7 +6,8 @@ date: 2021-07-27 00:00:00 -04
 permalink: "/hypo/"
 location: "PRA"
 ordinal: 1
-pdflink: "https://arxiv.org/abs/2102.02194"
-preview: "Z M. Rossi, I L. Chuang"
+pdflink: "https://arxiv.org/pdf/2102.02194"
+abslink: ""
+preview: "Z. M. Rossi, I. L. Chuang"
 ---
 [\[PDF\]](https://arxiv.org/pdf/2102.02194)

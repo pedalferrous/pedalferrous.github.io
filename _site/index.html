@@ -1,8 +1,8 @@
 
 
 <!DOCTYPE html>
-<html lang="en"><head>
-  
+<html lang="en" data-theme="dark"><head>
+
   <!-- Ported from previous site -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,899 +24,1179 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-</head><body>
+</head>
+<body>
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="container">
           <div class="home">
 
-  
+    
 
 
-  <div class="d-block d-md-none pb-5">
-      <nav class="p-0 navbar fixed-top bg-custom navbar-dark navbar-expand-lg navigation">
-          <a class="py-2 px-3 text-decoration-none w-100 ml-auto" data-toggle="collapse" href="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              >>>
-          </a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <div class="d-flex">
-                  <ul class="navbar-nav list-inline mx-auto justify-content-center">
-                      <li class="pb-1 nav-item glow-image">
-                          <a class="text-decoration-none" href="http://localhost:4000">
-                              > home
-                          </a>
-                      </li>
-                      <li class="py-1 pb-4 nav-item glow-image">
-                          <a class="text-decoration-none" href="https://en.wikipedia.org/wiki/Special:Random">
-                              > somewhere else
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-  </div>
+    <div class="d-block d-md-none pb-5">
+        <nav class="p-0 navbar fixed-top bg-custom navbar-dark navbar-expand-lg navigation">
+            <a class="py-2 px-3 text-decoration-none w-100 ml-auto" data-toggle="collapse" href="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                >>>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-flex">
+                    <ul class="navbar-nav list-inline mx-auto justify-content-center">
+                        <li class="pb-1 nav-item glow-image">
+                            <a class="text-decoration-none" href="http://localhost:4000">
+                                > home
+                            </a>
+                        </li>
+                        <li class="py-1 pb-4 nav-item glow-image">
+                            <a class="text-decoration-none" href="https://en.wikipedia.org/wiki/Special:Random">
+                                > somewhere else
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-  <div class="row justify-content-center py-5 px-4">
-      <div class="col col-lg-10 col-md-12 col-sm-12 col-12">
+    <div class="row justify-content-center py-5 px-4">
+        <div class="col col-lg-10 col-md-12 col-sm-12 col-12">
 
-          <!-- title and subtitle -->
-          <div class="row justify-content-center no-gutters">
-              <div class="col col-12">
-                  <!-- Display for mobile -->
-                  <div class="d-md-none">
-                      <h4 class="glow-title">
-                          <div class="d-md-none"></div>
-                          <a class="text-decoration-none" href="http://localhost:4000">
-                              ❍ zane marius rossi
-                          </a>
-                      </h4>
-                      <div>
-                          <p class="glow-subtitle">
-                              JSPS fellow at UTokyo in quantum algorithms; previously PhD @ MIT
-                          </p>
-                      </div>
-                  </div>
-                  <!-- Display on larger devices -->
-                  <div class="d-none d-md-block">
-                      <h4 class="glow-title">
-                          <a class="text-decoration-none right-title" href="http://localhost:4000">
-                              ❍ zane marius rossi
-                          </a>
-                      </h4>
-                      <div>
-                          <p class="glow-subtitle right-title sub-title">
-                              JSPS fellow at UTokyo in quantum algorithms; previously PhD @ MIT
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <!-- title and subtitle -->
+            <div class="row justify-content-center no-gutters">
+                <div class="col col-12">
+                    <!-- Display for mobile -->
+                    <div class="d-md-none">
+                        <h4 class="glow-title">
+                            <div class="d-md-none"></div>
+                            <a class="text-decoration-none" href="http://localhost:4000">
+                                ❍ zane marius rossi
+                            </a>
+                        </h4>
+                        <div>
+                            <p class="glow-subtitle">
+                                JSPS fellow at UTokyo in quantum algorithms; previously PhD @ MIT
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Display on larger devices -->
+                    <div class="d-none d-md-block">
+                        <h4 class="glow-title">
+                            <a class="text-decoration-none right-title" href="http://localhost:4000">
+                                ❍ zane marius rossi
+                            </a>
+                        </h4>
+                        <div>
+                            <p class="glow-subtitle right-title sub-title">
+                                JSPS fellow at UTokyo in quantum algorithms; previously PhD @ MIT
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <div class="row no-gutters">
+            <div class="row no-gutters">
             <div class="col col-12 pt-3">
-              <div class="code-box">
+                <div class="code-box">
                 <div class="d-md-none">
-                  <p class="post-mobile-dull">
-                    <img class="title-img" src="assets/img/tv_person.svg">
-                  </p>
+                    <p class="post-mobile-dull">
+                    <img class="title-img" id="title-img-mobile" src="assets/img/tv_person.svg">
+                    </p>
                 </div>
                 <div class="d-none d-md-block">
-                  <p class="right-post">
-                    <img class="title-img" src="assets/img/tv_person.svg">
-                  </p>
+                    <p class="right-post">
+                    <img class="title-img" id="title-img" src="assets/img/tv_person.svg">
+                    </p>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
 
-          <!-- LLM advisory -->
-          <div class="row no-gutters">
-              <div class="col col-12 pt-3">
-                  <div class="code-box">
-                      <!-- Display for mobile -->
-                      <div class="d-md-none">
-                          <p class="post-mobile-tip">
+            <!-- General job update -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="post-mobile-alert">
+                                I am on the academic (and select industry) job market for 2025–2026! My work is in the mathematical theory of quantum algorithms; check out my <a href="href="assets/pdf/rossi_zane_cv.pdf"" class="emphasis">[curriculum vitae&nbsp;↗]</a> and <a href="#" class="emphasis">[research statement&nbsp;↗]</a>!
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="left-post-alert">
+                                Update・速報
+                            </p>
+                            <p class="right-post-alert">
+                                I am on the academic (and select industry) job market for 2025–2026! My work is in the mathematical theory of quantum algorithms; check out my <a href="assets/pdf/rossi_zane_cv.pdf" class="emphasis">[curriculum vitae&nbsp;↗]</a> and <a href="#" class="emphasis">[research statement&nbsp;↗]</a>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme advisory -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="post-mobile-tip">
+                            For those who prefer, you can
+                            <label class="toggle-wrapper" for="checkbox">
+                            <span class="toggle-span emphasis">
+                            [toggle light/dark mode here]
+                            </span>
+                            <input class="toggle-checkbox" type="checkbox" id="checkbox" />
+                            </label>.
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="left-post-tip">
+                                Site theme.
+                            </p>
+                            <p class="right-post-tip">
+                            For those who prefer, you can
+                            <label class="toggle-wrapper" for="checkbox">
+                            <span class="toggle-span emphasis">
+                            [toggle light/dark mode here]
+                            </span>
+                            <input class="toggle-checkbox" type="checkbox" id="checkbox" />
+                            </label>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- overview and summary -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="post-mobile-dull">
+                                I study the theory of quantum algorithms at the University of Tokyo; until recently I was at MIT completing my doctorate, advised by <a href="https://scholar.google.com/citations?user=QKyb_9oAAAAJ&hl=en" class="emphasis">Ike&nbsp;Chuang&nbsp;↗</a>. My work draws on techniques from <span class="emphasis">representation theory</span>, <span class="emphasis">functional analysis</span>, and <span class="emphasis">algebraic geometry</span> to construct intuitive quantum algorithms for common problems in linear algebra.
+                                <br><br>
+                                Quantum computing lacks diverse algorithmic techniques, and those that exist are fragile & specific. My takeaway from this is the virtue of <span class="emphasis">translating</span> sophisticated techniques from well-established mathematical subfields to the lexicon of quantum computation.
+                                <br><br>
+                                Not only does this pad-out the quantum algorithmist's toolkit but, if exposited clearly, can also recruit the interest and collaboration of previously disparate mathematical and TCS communities.
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="left-post">
+                                About me
+                            </p>
+                            <p class="right-post-dull">
+                                I study the theory of quantum algorithms at the University of Tokyo; until recently I was at MIT completing my doctorate, advised by <a href="https://scholar.google.com/citations?user=QKyb_9oAAAAJ&hl=en" class="emphasis">Ike&nbsp;Chuang&nbsp;↗</a>. My work draws on techniques from <span class="emphasis">algebraic geometry</span>, <span class="emphasis">functional analysis</span>, and <span class="emphasis">category theory</span> to construct intuitive quantum algorithms for common problems in linear algebra.
+                                <br><br>
+                                Quantum computing lacks diverse algorithmic techniques, and those that exist are fragile & specific. My takeaway from this is the virtue of <span class="emphasis">translating</span> sophisticated techniques from well-established mathematical subfields to the lexicon of quantum computation.
+                                <br><br>
+                                Not only does this pad-out the quantum algorithmist's toolkit but, if exposited clearly, it can also recruit the interest and collaboration of previously disparate mathematical and TCS communities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LLM advisory -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="post-mobile-tip">
                             As of your reading this no research, application, or post you've seen from me has been written with the assistance of a large language model. I hold no ire for their use in principle, but I appreciate disclosure.
-                          </p>
-                      </div>
-                      <!-- Display on larger devices -->
-                      <div class="d-none d-md-block">
-                          <p class="left-post-tip">
-                              On LLM use.
-                          </p>
-                          <p class="right-post-tip">
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="left-post-tip">
+                                On LLM use.
+                            </p>
+                            <p class="right-post-tip">
                             As of your reading this no research, application, or post you've seen from me has been written with the assistance of a large language model. I hold no ire for their use in principle, but I appreciate disclosure.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <!-- overview and summary -->
-          <div class="row no-gutters">
-              <div class="col col-12 pt-3">
-                  <div class="code-box">
-                      <!-- Display for mobile -->
-                      <div class="d-md-none">
-                          <p class="post-mobile-dull">
-                              I study the theory of quantum algorithms at the University of Tokyo; until recently I was at MIT completing my doctorate, advised by <a href="https://scholar.google.com/citations?user=QKyb_9oAAAAJ&hl=en" class="emphasis">Ike&nbsp;Chuang&nbsp;↗</a>. My work draws on techniques from <span class="emphasis">representation theory</span>, <span class="emphasis">functional analysis</span>, and <span class="emphasis">algebraic geometry</span> to construct intuitive quantum algorithms for common problems in linear algebra.
-                              <br><br>
-                              Quantum computing lacks diverse algorithmic techniques, and those that exist are fragile & specific. My takeaway from this is the virtue of <span class="emphasis">translating</span> sophisticated techniques from well-established mathematical subfields to the lexicon of quantum computation.
-                              <br><br>
-                              Not only does this pad-out the quantum algorithmist's toolkit but, if exposited clearly, can also recruit the interest and collaboration of previously disparate mathematical and TCS communities.
-                          </p>
-                      </div>
-                      <!-- Display on larger devices -->
-                      <div class="d-none d-md-block">
-                          <p class="left-post">
-                              About me
-                          </p>
-                          <p class="right-post-dull">
-                              I study the theory of quantum algorithms at the University of Tokyo; until recently I was at MIT completing my doctorate, advised by <a href="https://scholar.google.com/citations?user=QKyb_9oAAAAJ&hl=en" class="emphasis">Ike&nbsp;Chuang&nbsp;↗</a>. My work draws on techniques from <span class="emphasis">algebraic geometry</span>, <span class="emphasis">functional analysis</span>, and <span class="emphasis">category theory</span> to construct intuitive quantum algorithms for common problems in linear algebra.
-                              <br><br>
-                              Quantum computing lacks diverse algorithmic techniques, and those that exist are fragile & specific. My takeaway from this is the virtue of <span class="emphasis">translating</span> sophisticated techniques from well-established mathematical subfields to the lexicon of quantum computation.
-                              <br><br>
-                              Not only does this pad-out the quantum algorithmist's toolkit but, if exposited clearly, it can also recruit the interest and collaboration of previously disparate mathematical and TCS communities.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <!-- Numerical package update -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="post-mobile-tip">
+                                I recently overhauled our Python-based numerical package, <a href="https://github.com/ichuang/pyqsp" class="emphasis">pyQSP&nbsp;↗</a>, used to handle all-things quantum signal processing (QSP) related, to be more numerically stable and user-friendly. Check out the revamped documentation and expanded features in <a href="https://github.com/ichuang/pyqsp" class="emphasis">v0.2.0</a>!
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="left-post-tip">
+                                Check it out!
+                            </p>
+                            <p class="right-post-tip">
+                                I recently overhauled our Python-based numerical package, <a href="https://github.com/ichuang/pyqsp" class="emphasis">pyQSP&nbsp;↗</a>, used to handle all-things quantum signal processing (QSP) related, to be more numerically stable and user-friendly. Check out the revamped documentation and expanded features in <a href="https://github.com/ichuang/pyqsp" class="emphasis">v0.2.0</a>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <div class="row no-gutters">
-              <div class="col col-12 pt-3">
-                  <div class="code-box">
-                      <!-- Display for mobile -->
-                      <div class="d-md-none">
-                          <p class="post-mobile-tip">
-                              I recently overhauled our Python-based numerical package, <a href="https://github.com/ichuang/pyqsp" class="emphasis">pyQSP&nbsp;↗</a>, used to handle all-things quantum signal processing (QSP) related, to be more numerically stable and user-friendly. Check out the revamped documentation and expanded features in <a href="https://github.com/ichuang/pyqsp" class="emphasis">v0.2.0</a>!
-                          </p>
-                      </div>
-                      <!-- Display on larger devices -->
-                      <div class="d-none d-md-block">
-                          <p class="left-post-tip">
-                              Check it out!
-                          </p>
-                          <p class="right-post-tip">
-                              I recently overhauled our Python-based numerical package, <a href="https://github.com/ichuang/pyqsp" class="emphasis">pyQSP&nbsp;↗</a>, used to handle all-things quantum signal processing (QSP) related, to be more numerically stable and user-friendly. Check out the revamped documentation and expanded features in <a href="https://github.com/ichuang/pyqsp" class="emphasis">v0.2.0</a>!
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <!-- Announcements -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="post-mobile-alert">
+                                I started as a JSPS Postdoctoral Fellow at the University of Tokyo with Professor Mio Murao's (村尾・美緒) group from August of 2024. If you are a researcher in Japan, or are interested in quantum/TCS research in Japan, drop me a line!
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="left-post-alert">
+                                Update・速報
+                            </p>
+                            <p class="right-post-alert">
+                                I started as a JSPS Postdoctoral Fellow at the University of Tokyo with Professor Mio Murao's (村尾・美緒) group from August of 2024. If you are a researcher in Japan, or are interested in quantum/TCS research in Japan, drop me a line!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <div class="row no-gutters">
-              <div class="col col-12 pt-3">
-                  <div class="code-box">
-                      <!-- Display for mobile -->
-                      <div class="d-md-none">
-                          <p class="post-mobile-alert">
-                              I'll be starting as a JSPS Postdoctoral Fellow at the University of Tokyo with Professor Mio Murao's (村尾・美緒) group from August of 2024. If you are a researcher in Japan, or are interested in quantum/TCS research in Japan, drop me a line!
-                          </p>
-                      </div>
-                      <!-- Display on larger devices -->
-                      <div class="d-none d-md-block">
-                          <p class="left-post-alert">
-                              Update・速報
-                          </p>
-                          <p class="right-post-alert">
-                              I'll be starting as a JSPS Postdoctoral Fellow at the University of Tokyo with Professor Mio Murao's (村尾・美緒) group from August of 2024. If you are a researcher in Japan, or are interested in quantum/TCS research in Japan, drop me a line!
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <!-- interests, directions, contact -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="post-mobile-dull">
+                                For my academic email, try <span class="emphasis">zmr</span> followed by <span class="emphasis">@g.ecc.u-tokyo.ac.jp</span>. For recent publications, check out my <a href="https://scholar.google.com/citations?user=W8_-cSoAAAAJ&hl=en" class="emphasis">google scholar page</a> or my <a href="assets/pdf/rossi_zane_cv.pdf" class="emphasis">curriculum vitae&nbsp;↗</a>.
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="left-post">
+                                Contact
+                            </p>
+                            <p class="right-post-dull">
+                                For my academic email, try <span class="emphasis">zmr</span> followed by <span class="emphasis">@g.ecc.u-tokyo.ac.jp</span>. For recent publications, check out my <a href="https://scholar.google.com/citations?user=W8_-cSoAAAAJ&hl=en" class="emphasis">google scholar page</a> or my <a href="assets/pdf/rossi_zane_cv.pdf" class="emphasis">curriculum vitae&nbsp;↗</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <!-- listing questions in the above intro, as bullets -->
-
-          <!-- interests, directions, contact -->
-          <div class="row no-gutters">
-              <div class="col col-12 pt-3">
-                  <div class="code-box">
-                      <!-- Display for mobile -->
-                      <div class="d-md-none">
-                          <p class="post-mobile-dull">
-                              For my academic email, try <span class="emphasis">zmr</span> followed by <span class="emphasis">@g.ecc.u-tokyo.ac.jp</span>. For recent publications, check out my <a href="https://scholar.google.com/citations?user=W8_-cSoAAAAJ&hl=en" class="emphasis">google scholar page</a> or my <a href="assets/pdf/rossi_zane_cv.pdf" class="emphasis">curriculum vitae&nbsp;↗</a>.
-                          </p>
-                      </div>
-                      <!-- Display on larger devices -->
-                      <div class="d-none d-md-block">
-                          <p class="left-post">
-                              Contact
-                          </p>
-                          <p class="right-post-dull">
-                              For my academic email, try <span class="emphasis">zmr</span> followed by <span class="emphasis">@g.ecc.u-tokyo.ac.jp</span>. For recent publications, check out my <a href="https://scholar.google.com/citations?user=W8_-cSoAAAAJ&hl=en" class="emphasis">google scholar page</a> or my <a href="assets/pdf/rossi_zane_cv.pdf" class="emphasis">curriculum vitae&nbsp;↗</a>.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- covering only the highlighted papers -->
-          
+            <!-- covering only the highlighted papers -->
+            
             <!-- select pubs -->
-                  <div class="row no-gutters">
-                      <div class="col col-12 pt-5">
-                          <!-- Display for mobile -->
-                          <div class="d-md-none">
-                              <div>
-                                  <h4 class="glow-subtitle">
-                                      highlighted publications
-                                  </h4>
-                              </div>
-                          </div>
-                          <!-- Display on larger devices -->
-                          <div class="d-none d-md-block">
-                              <div>
-                                  <h4 class="glow-subtitle right-title">
-                                      highlighted publications
-                                  </h4>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="row no-gutters">
+                        <div class="col col-12 pt-5">
+                            <!-- Display for mobile -->
+                            <div class="d-md-none">
+                                <div>
+                                    <h4 class="glow-subtitle">
+                                        highlighted publications
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- Display on larger devices -->
+                            <div class="d-none d-md-block">
+                                <div>
+                                    <h4 class="glow-subtitle right-title">
+                                        highlighted publications
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="row no-gutters">
+                    <div class="row no-gutters">
                     <div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2505.05468">
-                                              §11. A Solovay-Kitaev theorem for quantum signal processing >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2505.05468">
-                                          Zane M. Rossi
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2505.05468">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      arXiv:2505.05468<br>
-                                      May, 2025
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2505.05468">
-                                              §11. A Solovay-Kitaev theorem for quantum signal processing >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2505.05468">
-                                          Zane M. Rossi
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2505.05468">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2409.19043">
-                                              §9. Parallel Quantum Signal Processing Via Polynomial Factorization >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2409.19043">
-                                          J. M. Martyn, Z. M. Rossi, K. Z. Cheng, Y. Liu, I. L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2409.19043">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      arXiv:2409.19043<br>
-                                      Sep, 2024
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2409.19043">
-                                              §9. Parallel Quantum Signal Processing Via Polynomial Factorization >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2409.19043">
-                                          J. M. Martyn, Z. M. Rossi, K. Z. Cheng, Y. Liu, I. L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2409.19043">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2105.02859">
-                                              §2. A Grand unification of quantum algorithms >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2105.02859">
-                                          J M. Martyn, Z M. Rossi, A K. Tan, I L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2105.02859">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      PRX Quantum<br>
-                                      Dec, 2021
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2105.02859">
-                                              §2. A Grand unification of quantum algorithms >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2105.02859">
-                                          J M. Martyn, Z M. Rossi, A K. Tan, I L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2105.02859">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      
-                  </div>
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2505.05468">
+                                                §11. A Solovay-Kitaev theorem for quantum signal processing >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2505.05468">
+                                            Z. M. Rossi
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2505.05468" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        arXiv:2505.05468<br>
+                                        May, 2025
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2505.05468">
+                                                §11. A Solovay-Kitaev theorem for quantum signal processing >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2505.05468">
+                                            Z. M. Rossi
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2505.05468" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2409.19043">
+                                                §9. Parallel Quantum Signal Processing Via Polynomial Factorization >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2409.19043">
+                                            J. M. Martyn, Z. M. Rossi, K. Z. Cheng, Y. Liu, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2409.19043" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        arXiv:2409.19043<br>
+                                        Sep, 2024
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2409.19043">
+                                                §9. Parallel Quantum Signal Processing Via Polynomial Factorization >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2409.19043">
+                                            J. M. Martyn, Z. M. Rossi, K. Z. Cheng, Y. Liu, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2409.19043" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2105.02859">
+                                                §2. A Grand unification of quantum algorithms >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2105.02859">
+                                            J. M. Martyn, Z. M. Rossi, A. K. Tan, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2105.02859" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        PRX Quantum<br>
+                                        Dec, 2021
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2105.02859">
+                                                §2. A Grand unification of quantum algorithms >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2105.02859">
+                                            J. M. Martyn, Z. M. Rossi, A. K. Tan, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2105.02859" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 
             
-          
+            
 
-          <!-- misc notes -->
-          <div class="row no-gutters">
-              <div class="col col-12 pt-5">
-                  <!-- Display for mobile -->
-                  <div class="d-md-none">
-                      <div>
-                          <h4 class="glow-subtitle">
-                              notes and errata
-                          </h4>
-                      </div>
-                  </div>
-                  <!-- Display on larger devices -->
-                  <div class="d-none d-md-block">
-                      <div>
-                          <h4 class="glow-subtitle right-title">
-                              notes and errata
-                          </h4>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <!-- misc notes -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-5">
+                    <!-- Display for mobile -->
+                    <div class="d-md-none">
+                        <div>
+                            <h4 class="glow-subtitle">
+                                notes and errata
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- Display on larger devices -->
+                    <div class="d-none d-md-block">
+                        <div>
+                            <h4 class="glow-subtitle right-title">
+                                notes and errata
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <!-- overview and summary -->
-          <div class="row no-gutters">
-              <div class="col col-12 pt-3">
-                  <div class="code-box">
-                      <!-- Display for mobile -->
-                      <div class="d-md-none">
-                          <p class="post-mobile-dull">
-                              I was lucky to be able to intern at NTT Research Inc. in California, as well as visit and work at NTT BRL in Atsugi, Japan for a semester in 2022. 今から日本での研究グループの関係を作るのが続けたいので、僕の研究に興味が持てば気軽にメールして下さい。日本語でも大丈夫です。
-                          </p>
-                      </div>
-                      <!-- Display on larger devices -->
-                      <div class="d-none d-md-block">
-                          <p class="left-post">
-                              More about me
-                          </p>
-                          <p class="right-post-dull">
-                              I was lucky to be able to intern at NTT Research Inc. in California, as well as visit and work at NTT BRL in Atsugi, Japan for a semester in 2022. 今から日本での研究グループの関係を作るのが続けたいので、僕の研究に興味が持てば気軽にメールして下さい。日本語でも大丈夫です。
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <!-- overview and summary -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="post-mobile-dull">
+                                I was lucky to be able to intern at NTT Research Inc. in California, as well as visit and work at NTT BRL in Atsugi, Japan for a semester in 2022. 今から日本での研究グループの関係を作るのが続けたいので、僕の研究に興味が持てば気軽にメールして下さい。日本語でも大丈夫です。
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="left-post">
+                                More about me
+                            </p>
+                            <p class="right-post-dull">
+                                I was lucky to be able to intern at NTT Research Inc. in California, as well as visit and work at NTT BRL in Atsugi, Japan for a semester in 2022. 今から日本での研究グループの関係を作るのが続けたいので、僕の研究に興味が持てば気軽にメールして下さい。日本語でも大丈夫です。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <!-- all pubs -->
-          <div class="row no-gutters">
-              <div class="col col-12 pt-5">
-                  <!-- Display for mobile -->
-                  <div class="d-md-none">
-                      <div>
-                          <h4 class="glow-subtitle">
-                              all publications
-                          </h4>
-                      </div>
-                  </div>
-                  <!-- Display on larger devices -->
-                  <div class="d-none d-md-block">
-                      <div>
-                          <h4 class="glow-subtitle right-title">
-                              all publications
-                          </h4>
-                      </div>
-                  </div>
-              </div>
-          </div>
+            <!-- all pubs -->
+            <div class="row no-gutters">
+                <div class="col col-12 pt-5">
+                    <!-- Display for mobile -->
+                    <div class="d-md-none">
+                        <div>
+                            <h4 class="glow-subtitle">
+                                all publications
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- Display on larger devices -->
+                    <div class="d-none d-md-block">
+                        <div>
+                            <h4 class="glow-subtitle right-title">
+                                all publications
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          
+            
 
-          <!-- main messages -->
-          <div class="row no-gutters">
-              <!-- Beginning of posts --><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2505.05468">
-                                              §11. A Solovay-Kitaev theorem for quantum signal processing >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2505.05468">
-                                          Zane M. Rossi
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2505.05468">[PDF]</a>
+            <!-- main messages -->
+            <div class="row no-gutters">
+                <!-- Beginning of posts --><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2506.24112">
+                                                §12. Singular value transformation for unknown quantum channels >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2506.24112">
+                                            R. Niwa, Z. M. Rossi, P. Taranto, M. Murao
+                                        </a><br>
+                                        
+                                        <a href="https://arxiv.org/pdf/2506.24112" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        arXiv:2506.24112<br>
+                                        Jun, 2025
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2506.24112">
+                                                §12. Singular value transformation for unknown quantum channels >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2506.24112">
+                                            R. Niwa, Z. M. Rossi, P. Taranto, M. Murao
+                                        </a><br>
+                                        
+                                        <a href="https://arxiv.org/pdf/2506.24112" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2505.05468">
+                                                §11. A Solovay-Kitaev theorem for quantum signal processing >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2505.05468">
+                                            Z. M. Rossi
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2505.05468" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        arXiv:2505.05468<br>
+                                        May, 2025
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2505.05468">
+                                                §11. A Solovay-Kitaev theorem for quantum signal processing >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2505.05468">
+                                            Z. M. Rossi
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2505.05468" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2411.05058">
+                                                §10. Unification of Finite Symmetries in Simulation of Many-body Systems on Quantum Computers >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2411.05058">
+                                            V. M. Bastidas, Nathan Fitzpatrick, K. J. Joven, Z. M. Rossi, S. Islam, T. Van Voorhis, I. L. Chuang, Y. Liu
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2411.05058" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        arXiv:2411.05058<br>
+                                        Nov, 2024
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2411.05058">
+                                                §10. Unification of Finite Symmetries in Simulation of Many-body Systems on Quantum Computers >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2411.05058">
+                                            V. M. Bastidas, Nathan Fitzpatrick, K. J. Joven, Z. M. Rossi, S. Islam, T. Van Voorhis, I. L. Chuang, Y. Liu
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2411.05058" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2409.19043">
+                                                §9. Parallel Quantum Signal Processing Via Polynomial Factorization >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2409.19043">
+                                            J. M. Martyn, Z. M. Rossi, K. Z. Cheng, Y. Liu, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2409.19043" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        arXiv:2409.19043<br>
+                                        Sep, 2024
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2409.19043">
+                                                §9. Parallel Quantum Signal Processing Via Polynomial Factorization >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2409.19043">
+                                            J. M. Martyn, Z. M. Rossi, K. Z. Cheng, Y. Liu, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2409.19043" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2309.16665">
+                                                §8. Modular quantum signal processing in many variables >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2309.16665">
+                                            Z. M. Rossi, J. L. Ceroni, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2309.16665" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        arxiv:2309.16665<br>
+                                        Sep, 2023
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2309.16665">
+                                                §8. Modular quantum signal processing in many variables >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2309.16665">
+                                            Z. M. Rossi, J. L. Ceroni, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2309.16665" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2309.04538">
+                                                §7. Quantum signal processing with the one-dimensional quantum Ising model >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2309.04538">
+                                            V. M. Bastidas, S. Zeytinoğlu, Z. M. Rossi, I. L. Chuang, W. J. Munro
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2309.04538" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        PRB<br>
+                                        Sep, 2023
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2309.04538">
+                                                §7. Quantum signal processing with the one-dimensional quantum Ising model >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2309.04538">
+                                            V. M. Bastidas, S. Zeytinoğlu, Z. M. Rossi, I. L. Chuang, W. J. Munro
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2309.04538" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2304.14392">
+                                                §6. Semantic embedding for quantum algorithms >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2304.14392">
+                                            Z. M. Rossi, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2304.14392" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        arXiv:2304.14392<br>
+                                        Apr, 2023
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2304.14392">
+                                                §6. Semantic embedding for quantum algorithms >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2304.14392">
+                                            Z. M. Rossi, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2304.14392" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2304.14383">
+                                                §5. Quantum signal processing with continuous variables >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2304.14383">
+                                            Z M. Rossi, V M. Bastidas, W J. Munro, I L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2304.14383" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        arXiv:2304.14383<br>
+                                        Apr, 2023
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2304.14383">
+                                                §5. Quantum signal processing with continuous variables >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2304.14383">
+                                            Z M. Rossi, V M. Bastidas, W J. Munro, I L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2304.14383" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://quantum-journal.org/papers/q-2022-09-20-811/">
+                                                §4. Multivariable quantum signal processing (M-QSP) >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://quantum-journal.org/papers/q-2022-09-20-811/">
+                                            Z. M. Rossi, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://quantum-journal.org/papers/q-2022-09-20-811/" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        Quantum Journal<br>
+                                        Sep, 2022
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://quantum-journal.org/papers/q-2022-09-20-811/">
+                                                §4. Multivariable quantum signal processing (M-QSP) >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://quantum-journal.org/papers/q-2022-09-20-811/">
+                                            Z. M. Rossi, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://quantum-journal.org/papers/q-2022-09-20-811/" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2105.08707">
+                                                §3. Quantum advantage for noisy channel discrimination >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2105.08707">
+                                            Z. M. Rossi, J. Yu, I. L. Chuang, S. Sugiura
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2105.08707" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        PRA<br>
+                                        Mar, 2022
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2105.08707">
+                                                §3. Quantum advantage for noisy channel discrimination >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2105.08707">
+                                            Z. M. Rossi, J. Yu, I. L. Chuang, S. Sugiura
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2105.08707" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2105.02859">
+                                                §2. A Grand unification of quantum algorithms >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2105.02859">
+                                            J. M. Martyn, Z. M. Rossi, A. K. Tan, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2105.02859" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        PRX Quantum<br>
+                                        Dec, 2021
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2105.02859">
+                                                §2. A Grand unification of quantum algorithms >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2105.02859">
+                                            J. M. Martyn, Z. M. Rossi, A. K. Tan, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2105.02859" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2102.02194">
+                                                §1. Quantum hypothesis testing with group structure >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2102.02194">
+                                            Z. M. Rossi, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2102.02194" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        PRA<br>
+                                        Jul, 2021
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/2102.02194">
+                                                §1. Quantum hypothesis testing with group structure >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/2102.02194">
+                                            Z. M. Rossi, I. L. Chuang
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/2102.02194" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><div class="col col-12 pt-3">
+                            <div class="code-box">
+                                <!-- Display for mobile -->
+                                <div class="d-md-none">
+                                    <p class="post-mobile">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/1902.01474">
+                                                §0. Optimized compilation of aggregated instructions for realistic quantum computers >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/1902.01474">
+                                            Y. Shi, N. Leung, P. Gokhale, Z. M. Rossi, D. I. Schuster, H. Hoffmann, F. T. Chong
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/1902.01474" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Display on larger devices -->
+                                <div class="d-none d-md-block">
+                                    <p class="left-post">
+                                        ASPLOS 2019<br>
+                                        Apr, 2019
+                                    </p>
+                                    <p class="right-post">
+                                        <span class="post-title">
+                                            <a href="https://arxiv.org/pdf/1902.01474">
+                                                §0. Optimized compilation of aggregated instructions for realistic quantum computers >>
+                                            </a>
+                                        </span><br>
+                                        <a class="excerpt-link" href="https://arxiv.org/pdf/1902.01474">
+                                            Y. Shi, N. Leung, P. Gokhale, Z. M. Rossi, D. I. Schuster, H. Hoffmann, F. T. Chong
+                                        </a><br>
+                                        
+                                        <a href="" class="emphasis-abs">
+                                            [DOI]
+                                        </a>
+                                        
+                                        <a href="https://arxiv.org/pdf/1902.01474" class="emphasis-pdf">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End of posts. -->
+                <div class="col col-12 pt-3">
+                    <div class="code-box">
+                        <!-- Display for mobile -->
+                        <div class="d-md-none">
+                            <p class="post-mobile-dull">
+                                終点だ。挿絵：佐々木マキ。
+                            </p>
+                        </div>
+                        <!-- Display on larger devices -->
+                        <div class="d-none d-md-block">
+                            <p class="left-post">
 
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      arXiv:2505.05468<br>
-                                      May, 2025
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2505.05468">
-                                              §11. A Solovay-Kitaev theorem for quantum signal processing >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2505.05468">
-                                          Zane M. Rossi
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2505.05468">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2411.05058">
-                                              §10. Unification of Finite Symmetries in Simulation of Many-body Systems on Quantum Computers >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2411.05058">
-                                          Victor M. Bastidas, Nathan Fitzpatrick, K. J. Joven, Zane M. Rossi, Shariful Islam, Troy Van Voorhis, Isaac L. Chuang, Yuan Liu
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2411.05058">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      arXiv:2411.05058<br>
-                                      Nov, 2024
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2411.05058">
-                                              §10. Unification of Finite Symmetries in Simulation of Many-body Systems on Quantum Computers >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2411.05058">
-                                          Victor M. Bastidas, Nathan Fitzpatrick, K. J. Joven, Zane M. Rossi, Shariful Islam, Troy Van Voorhis, Isaac L. Chuang, Yuan Liu
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2411.05058">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2409.19043">
-                                              §9. Parallel Quantum Signal Processing Via Polynomial Factorization >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2409.19043">
-                                          J. M. Martyn, Z. M. Rossi, K. Z. Cheng, Y. Liu, I. L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2409.19043">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      arXiv:2409.19043<br>
-                                      Sep, 2024
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2409.19043">
-                                              §9. Parallel Quantum Signal Processing Via Polynomial Factorization >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2409.19043">
-                                          J. M. Martyn, Z. M. Rossi, K. Z. Cheng, Y. Liu, I. L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2409.19043">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2309.16665">
-                                              §8. Modular quantum signal processing in many variables >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2309.16665">
-                                          Z. M. Rossi, J. L. Ceroni, I. L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2309.16665">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      arxiv:2309.16665<br>
-                                      Sep, 2023
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2309.16665">
-                                              §8. Modular quantum signal processing in many variables >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2309.16665">
-                                          Z. M. Rossi, J. L. Ceroni, I. L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2309.16665">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2309.04538">
-                                              §7. Quantum signal processing with the one-dimensional quantum Ising model >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2309.04538">
-                                          V. M. Bastidas, S. Zeytinoğlu, Z. M. Rossi, I. L. Chuang, W. J. Munro
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2309.04538">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      PRB<br>
-                                      Sep, 2023
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2309.04538">
-                                              §7. Quantum signal processing with the one-dimensional quantum Ising model >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2309.04538">
-                                          V. M. Bastidas, S. Zeytinoğlu, Z. M. Rossi, I. L. Chuang, W. J. Munro
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2309.04538">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2304.14392">
-                                              §6. Semantic embedding for quantum algorithms >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2304.14392">
-                                          Z. M. Rossi, I. L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2304.14392">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      arXiv:2304.14392<br>
-                                      Apr, 2023
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2304.14392">
-                                              §6. Semantic embedding for quantum algorithms >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2304.14392">
-                                          Z. M. Rossi, I. L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2304.14392">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2304.14383">
-                                              §5. Quantum signal processing with continuous variables >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2304.14383">
-                                          Z M. Rossi, V M. Bastidas, W J. Munro, I L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2304.14383">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      arXiv:2304.14383<br>
-                                      Apr, 2023
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2304.14383">
-                                              §5. Quantum signal processing with continuous variables >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2304.14383">
-                                          Z M. Rossi, V M. Bastidas, W J. Munro, I L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2304.14383">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://quantum-journal.org/papers/q-2022-09-20-811/">
-                                              §4. Multivariable quantum signal processing (M-QSP) >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://quantum-journal.org/papers/q-2022-09-20-811/">
-                                          Z M. Rossi, I L. Chuang
-                                      </a><br>
-                                      <a href="https://quantum-journal.org/papers/q-2022-09-20-811/">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      Quantum Journal<br>
-                                      Sep, 2022
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://quantum-journal.org/papers/q-2022-09-20-811/">
-                                              §4. Multivariable quantum signal processing (M-QSP) >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://quantum-journal.org/papers/q-2022-09-20-811/">
-                                          Z M. Rossi, I L. Chuang
-                                      </a><br>
-                                      <a href="https://quantum-journal.org/papers/q-2022-09-20-811/">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2105.08707">
-                                              §3. Quantum advantage for noisy channel discrimination >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2105.08707">
-                                          Z M. Rossi, J Yu, I L. Chuang, S Sugiura
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2105.08707">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      PRA<br>
-                                      Mar, 2022
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2105.08707">
-                                              §3. Quantum advantage for noisy channel discrimination >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2105.08707">
-                                          Z M. Rossi, J Yu, I L. Chuang, S Sugiura
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2105.08707">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2105.02859">
-                                              §2. A Grand unification of quantum algorithms >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2105.02859">
-                                          J M. Martyn, Z M. Rossi, A K. Tan, I L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2105.02859">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      PRX Quantum<br>
-                                      Dec, 2021
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2105.02859">
-                                              §2. A Grand unification of quantum algorithms >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2105.02859">
-                                          J M. Martyn, Z M. Rossi, A K. Tan, I L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2105.02859">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2102.02194">
-                                              §1. Quantum hypothesis testing with group structure >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2102.02194">
-                                          Z M. Rossi, I L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2102.02194">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      PRA<br>
-                                      Jul, 2021
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/2102.02194">
-                                              §1. Quantum hypothesis testing with group structure >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/2102.02194">
-                                          Z M. Rossi, I L. Chuang
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/2102.02194">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><div class="col col-12 pt-3">
-                          <div class="code-box">
-                              <!-- Display for mobile -->
-                              <div class="d-md-none">
-                                  <p class="post-mobile">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/1902.01474">
-                                              §0. Optimized compilation of aggregated instructions for realistic quantum computers >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/1902.01474">
-                                          Y Shi, N Leung, P Gokhale, Z M. Rossi, D I. Schuster, H Hoffmann, F T. Chong
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/1902.01474">[PDF]</a>
-
-                                  </p>
-                              </div>
-                              <!-- Display on larger devices -->
-                              <div class="d-none d-md-block">
-                                  <p class="left-post">
-                                      ASPLOS 2019<br>
-                                      Apr, 2019
-                                  </p>
-                                  <p class="right-post">
-                                      <span class="post-title">
-                                          <a href="https://arxiv.org/abs/1902.01474">
-                                              §0. Optimized compilation of aggregated instructions for realistic quantum computers >>
-                                          </a>
-                                      </span><br>
-                                      <a class="excerpt-link" href="https://arxiv.org/abs/1902.01474">
-                                          Y Shi, N Leung, P Gokhale, Z M. Rossi, D I. Schuster, H Hoffmann, F T. Chong
-                                      </a><br>
-                                      <a href="https://arxiv.org/pdf/1902.01474">[PDF]</a>
-
-                                  </p>
-                              </div>
-                          </div>
-                      </div><!-- End of posts. -->
-              <div class="col col-12 pt-3">
-                  <div class="code-box">
-                      <!-- Display for mobile -->
-                      <div class="d-md-none">
-                          <p class="post-mobile-dull">
-                              終点だ。挿絵：佐々木マキ。
-                          </p>
-                      </div>
-                      <!-- Display on larger devices -->
-                      <div class="d-none d-md-block">
-                          <p class="left-post">
-
-                          </p>
-                          <p class="right-post-dull">
-                              終点だ。挿絵：佐々木マキ。
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+                            </p>
+                            <p class="right-post-dull">
+                                終点だ。挿絵：佐々木マキ。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
         </div>
@@ -928,10 +1208,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- external script -->
-    <script href="/assets/js/glow_script.js"></script>
-    <script href="/assets/js/toggle_script.js"></script>
-
-  </body>
+    <!-- Include scripts on all pages --><!-- Script for offset between glow-pulse elements -->
+<script src="/assets/js/glow_script.js"></script>
+<!-- Script for toggling between light and dark modes -->
+<script src="/assets/js/toggle_script.js"></script>
+</body>
 
 </html>
