@@ -138,7 +138,7 @@
     --alt-text: #e80037; /*ba002c*/
     --alt-text-pdf: #e80037; /*#29ab61;*/
     --alt-text-abs: #2071ad;
-    --alt-text-pres: #e80037;
+    --alt-text-pres: #009c77;
 }
 
 /*\definecolor{crimson}{RGB}{186,0,44}
@@ -195,6 +195,10 @@ a:hover {
 
 .emphasis-abs {
     color: var(--alt-text-abs) !important;
+}
+
+.emphasis-vid {
+    color: var(--alt-text-pres) !important;
 }
 
 .navlink {
