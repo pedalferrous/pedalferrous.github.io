@@ -43,6 +43,7 @@
     --alt-text-pdf: #ff1144;
     --alt-text-abs: #ffbb11;
     --alt-text-pres: #4ab1ef;
+    --alt-text-slide: #cb8dff;
 }
 
 [data-theme="dark"] {
@@ -90,6 +91,7 @@
     --alt-text-pdf: #ff1144;
     --alt-text-abs: #ffbb11;
     --alt-text-pres: #4ab1ef;
+    --alt-text-slide:#cb8dff;
 }
 
 [data-theme="light"] {
@@ -139,6 +141,7 @@
     --alt-text-pdf: #e80037; /*#29ab61;*/
     --alt-text-abs: #2071ad;
     --alt-text-pres: #009c77;
+    --alt-text-slide: #5700a1;
 }
 
 /*\definecolor{crimson}{RGB}{186,0,44}
@@ -199,6 +202,10 @@ a:hover {
 
 .emphasis-vid {
     color: var(--alt-text-pres) !important;
+}
+
+.emphasis-slide {
+    color: var(--alt-text-slide) !important;
 }
 
 .navlink {
